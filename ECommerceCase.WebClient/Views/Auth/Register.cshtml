@@ -1,0 +1,58 @@
+@model ECommerceCase.WebClient.ViewModels.Auth.RegisterViewModel
+
+<section style="background: #fafafa; border: 1px solid #999999; padding: 30px 20px;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-sm-12">
+				<div class="sign-up">
+					<form id="signup" class="validate-form" asp-controller="Auth" asp-action="Register" method="post">
+						@Html.AntiForgeryToken()
+						<div class="col-12" style="margin-bottom: 40px;">
+							<h2>Register</h2>
+						</div>
+					
+						<div class="col-lg-11 col-md-12" style="margin-bottom: 10px;">
+							<label style="min-width: 210px;"><i class="icon icon-profile"></i>Name & Surname</label>
+							<input asp-for="FirstName" id="firstName" type="text" class="input-control" maxlength="30" placeholder="Name & Surname" style="min-width: 300px;">
+							<span asp-validation-for="FirstName" class="text-danger"></span>
+						</div>
+        
+						<div class="col-lg-11 col-md-12" style="margin-bottom: 10px;">
+							<label style="min-width: 210px;"><i class="icon icon-mail font20"></i> E-mail</label>
+							<input asp-for="Email" id="mail" type="email" class="input-control" placeholder="E-mail" style="min-width: 300px;">
+							<span asp-validation-for="Email" class="text-danger"></span>
+						</div>
+        
+						<div class="col-lg-11 col-md-12" style="margin-bottom: 10px;">
+							<label style="min-width: 210px;"><i class="icon icon-password"></i>Password</label>
+							<input asp-for="PasswordFirst" id="password" type="password" maxlength="30" class="input-control pass-required" placeholder="Password" style="min-width: 300px;">
+							<span asp-validation-for="PasswordFirst" class="text-danger"></span>
+						</div>
+                                
+						<div class="col-lg-11 col-md-12" style="margin-bottom: 10px;">
+							<label style="min-width: 210px;"><i class="icon icon-password"></i>Repeat Password</label>
+							<input asp-for="PasswordSecond" id="pass2" type="password" maxlength="30" class="input-control pass-required" placeholder="Repeat Password" style="min-width: 300px;">
+							<span asp-validation-for="PasswordSecond" class="text-danger"></span>
+						</div>
+					
+						<div class="col-lg-11 col-md-12" style="margin-bottom: 40px;">
+							<label class="check-accept flex-item" style="min-width: 210px;">
+								<input asp-for="TermsAndConditions" type="checkbox" id="accept">
+								<a class="openLightbox" href="javascript:;" style="font-size: small;">
+									I read and accept the terms and conditions
+								</a>
+							</label>
+							<span asp-validation-for="TermsAndConditions" class="text-danger"></span>
+						</div>
+        						
+						<div class="col-11 col-md-11">
+							<input class="btn btn-primary hover" type="submit" value="Sign Up">
+						</div>
+					</form>
+				</div>
+			</div>	
+		</div>
+	</div>
+</section>
+
+<div style="height: calc(100vh - 692px);">&nbsp;</div>

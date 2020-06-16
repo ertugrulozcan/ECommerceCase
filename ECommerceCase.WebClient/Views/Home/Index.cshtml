@@ -1,0 +1,9 @@
+﻿@{
+	ViewData["Title"] = "ECommerce Case";
+}
+
+<div>
+	@await Html.PartialAsync("../Partials/_HeadSlider")
+	
+	@await Component.InvokeAsync("ProductsGrid")
+</div>

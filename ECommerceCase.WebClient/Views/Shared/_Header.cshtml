@@ -1,0 +1,45 @@
+@using ECommerceCase.WebClient.Models.Auth
+
+@{
+	UserModel LoggedInUser = null;
+	@if (User.Identity.IsAuthenticated)
+	{
+		LoggedInUser = new UserModel
+		{
+			Id = User.Claims.FirstOrDefault(p => p.Type == "id")?.Value,
+			Username = User.Claims.FirstOrDefault(p => p.Type == "username")?.Value,
+			Email = User.Claims.FirstOrDefault(p => p.Type == "email")?.Value,
+			FirstName = User.Claims.FirstOrDefault(p => p.Type == "firstName")?.Value,
+			LastName = User.Claims.FirstOrDefault(p => p.Type == "lastName")?.Value
+		};
+	}
+}
+
+<header class="w3-container w3-xlarge" style="margin-top: 30px; margin-bottom: 20px;">
+	<p class="w3-left">ECommerceCase</p>
+	
+	<div class="w3-right">
+		<div style="display: inline-block;">
+			@await Component.InvokeAsync("ShoppingCartButton")	
+        </div>
+		
+		<div style="display: inline-block;">
+			@if (User.Identity.IsAuthenticated)
+			{
+				<i class="fa fa-user"><span style="margin-left: 10px; font-family: 'Roboto', sans-serif; font-size: 18px;">@LoggedInUser.FullName</span></i>
+
+				<a class="icon icon-profile" asp-controller="Auth" asp-action="Logout" style="margin-left: 10px; font-family: 'Roboto', sans-serif; font-size: 18px;">
+					<span>Logout</span>
+				</a>
+			}
+			else
+			{
+				<i class="fa fa-user">
+					<a class="icon icon-profile" asp-controller="Auth" asp-action="Login" style="margin-left: 10px; font-family: 'Roboto', sans-serif; font-size: 18px;">
+						<span>Login</span>
+					</a>
+				</i>
+			}
+		</div>
+	</div>
+</header>

@@ -1,0 +1,12 @@
+/Users/admin/Projects/ECommerceCase/ECommerceCase.Infrastructure/bin/Debug/netcoreapp3.1/ECommerceCase.Infrastructure.deps.json
+/Users/admin/Projects/ECommerceCase/ECommerceCase.Infrastructure/bin/Debug/netcoreapp3.1/ECommerceCase.Infrastructure.dll
+/Users/admin/Projects/ECommerceCase/ECommerceCase.Infrastructure/bin/Debug/netcoreapp3.1/ECommerceCase.Infrastructure.pdb
+/Users/admin/Projects/ECommerceCase/ECommerceCase.Infrastructure/bin/Debug/netcoreapp3.1/ECommerceCase.Core.dll
+/Users/admin/Projects/ECommerceCase/ECommerceCase.Infrastructure/bin/Debug/netcoreapp3.1/ECommerceCase.Core.pdb
+/Users/admin/Projects/ECommerceCase/ECommerceCase.Infrastructure/obj/Debug/netcoreapp3.1/ECommerceCase.Infrastructure.csprojAssemblyReference.cache
+/Users/admin/Projects/ECommerceCase/ECommerceCase.Infrastructure/obj/Debug/netcoreapp3.1/ECommerceCase.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/admin/Projects/ECommerceCase/ECommerceCase.Infrastructure/obj/Debug/netcoreapp3.1/ECommerceCase.Infrastructure.AssemblyInfoInputs.cache
+/Users/admin/Projects/ECommerceCase/ECommerceCase.Infrastructure/obj/Debug/netcoreapp3.1/ECommerceCase.Infrastructure.AssemblyInfo.cs
+/Users/admin/Projects/ECommerceCase/ECommerceCase.Infrastructure/obj/Debug/netcoreapp3.1/ECommerceCase.Infrastructure.csproj.CopyComplete
+/Users/admin/Projects/ECommerceCase/ECommerceCase.Infrastructure/obj/Debug/netcoreapp3.1/ECommerceCase.Infrastructure.dll
+/Users/admin/Projects/ECommerceCase/ECommerceCase.Infrastructure/obj/Debug/netcoreapp3.1/ECommerceCase.Infrastructure.pdb

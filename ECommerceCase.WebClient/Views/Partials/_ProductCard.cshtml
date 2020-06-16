@@ -1,0 +1,23 @@
+@using ECommerceCase.Core.Models.Products
+@model ECommerceCase.WebClient.ViewModels.Products.ProductCardViewModel
+
+<form asp-controller="Shopping" asp-action="AddToShoppingCart" asp-route-productId="@Model.ProductId">
+	<div class="w3-container">
+    	<div class="w3-display-container">
+    		<img src="@Model.ImageUrl" alt="product-@Model.ProductId" style="width:100%">
+    		
+    		@if (Model.SaleStatus != SaleStatus.Sale)
+    		{
+    			<span class="w3-tag w3-display-topleft">@Model.SaleStatus</span>	
+    		}
+    		
+    		@if (Model.SaleStatus == SaleStatus.Sale)
+    		{
+    			<div class="w3-display-middle w3-display-hover">
+    				<button class="w3-button w3-black">Add to cart <i class="fa fa-shopping-cart"></i></button>
+    			</div>	
+    		}
+    	</div>
+    	<p>@Model.Title<br><b>@Model.Price</b></p>
+    </div>
+</form>

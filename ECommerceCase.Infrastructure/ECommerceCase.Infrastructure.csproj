@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+
+        <PackageId>ECommerceCase.Infrastructure</PackageId>
+        <PackageVersion>1.0.0</PackageVersion>
+        <Authors>Ertuğrul Özcan</Authors>
+        <Description>ECommerceCase.Infrastructure</Description>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <Copyright>ECommerceCase.Infrastructure | Copyright 2020 (c)</Copyright>
+        <PackageTags>ECommerceCase.Infrastructure</PackageTags>
+        <Title>ECommerceCase.Infrastructure</Title>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <FileVersion>1.0.0</FileVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ECommerceCase.Core\ECommerceCase.Core.csproj" />
+    </ItemGroup>
+
+</Project>

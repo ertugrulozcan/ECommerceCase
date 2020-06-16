@@ -1,0 +1,72 @@
+@model ECommerceCase.WebClient.ViewModels.Auth.LoginViewModel
+
+<section style="background: #fafafa; border: 1px solid #999999; padding: 30px 20px;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<div asp-validation-summary="ModelOnly" class="alert alert-danger" style="font-weight: bolder;" role="alert"></div>
+			</div>
+			
+			<div class="col-md-12 col-sm-12">
+				@if (Model.IsHealthy)
+				{
+					<span class="badge badge-pill badge-success"></span>
+				}
+				else
+				{
+					<span class="badge badge-pill badge-success"></span>
+				}
+			</div>
+			
+			<div class="col-md-6 col-sm-12">
+				<div>
+					<form id="signup" class="validate-form" asp-controller="Auth" asp-action="Login" method="post">
+						@Html.AntiForgeryToken()
+
+						<div class="col-12" style="margin-bottom: 40px;">
+							<h2>Login</h2>
+						</div>
+
+						<div class="col-12" style="margin-bottom: 10px;">
+							<label style="min-width: 150px;"><i class="icon icon-profile"></i> E-Mail </label>
+							<input asp-for="Username" class="input-control" maxlength="30" placeholder=" E-Mail" autocomplete="off" style="min-width: 200px;">
+							<span asp-validation-for="Username" class="text-danger"></span>
+						</div>
+
+						<div class="col-12 sign-up-block">
+							<label style="min-width: 150px;"><i class="icon icon-password"></i>Şifre</label>
+							<input asp-for="Password" class="input-control" maxlength="30" placeholder=" Şifre" style="min-width: 200px;">
+							<span asp-validation-for="Password" class="text-danger"></span>
+						</div>
+
+						<div style="height: 30px;"></div>
+
+						<div class="col-12">
+							<button type="submit" class="btn btn-primary hover">Giriş Yap</button>
+						</div>
+
+						<div style="height: 20px;"></div>
+
+						<div class="col-12">
+							<a asp-controller="Auth" asp-action="Register">
+								Üye ol!
+							</a>
+						</div>
+
+						@if (ViewBag.ReturnUrl != null)
+						{
+							string returnUrl = ViewBag.ReturnUrl.ToString();
+							<input asp-for="ReturnUrlAfterLogin" type="hidden" value="@returnUrl" />
+						}
+					</form>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-sm-12">
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<div style="height: calc(100vh - 602px);">&nbsp;</div>

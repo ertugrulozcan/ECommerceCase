@@ -1,0 +1,55 @@
+version: '3.4'
+
+services:
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - /tmp/db:/data/db:rw
+  
+  ertis_auth:
+    build: ErtisAuth
+    links:
+      - mongo
+    ports:
+      - "8888:8888"
+  
+  pim-api:
+    build: ECommerceCase.PIM
+    ports:
+      - "9000:80"
+
+  wms-api:
+    build: ECommerceCase.WMS
+    ports:
+      - "8000:80"
+
+  oms-api:
+    build: ECommerceCase.OMS
+    environment:
+      - PimApiUrl=http://pim-api
+      - WmsApiUrl=http://wms-api
+    ports:
+      - "7000:80"
+    depends_on:
+      - pim-api
+      - wms-api
+        
+  webmvc:
+    build: ECommerceCase.WebClient
+    environment:
+      - ErtisAuth:BaseUrl=http://ertis_auth:8888/api/v1
+      - ErtisAuth:MembershipId=5e652757aac6b140f9250316
+      - ErtisAuth:AdministratorToken=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwcm4iOiI1ZWU4Yjg3YzM0OWRiNTJlMDVkNTUzMTEiLCJleHAiOjQ3NDU5MTg3ODQsImp0aSI6IjVlZThkYjQwMzZlOTk3NjM3ZTNlZjA0NSIsImlhdCI6MTU5MjMxODc4NCwicmYiOmZhbHNlfQ.buwtgbpXd_86AZ1bHfcee3paYYkxrzHXbEZbrdUEEv8
+      - PimApiUrl=http://pim-api
+      - WmsApiUrl=http://wms-api
+      - OmsApiUrl=http://oms-api
+    ports:
+      - "5000:80"
+    depends_on:
+      - mongo
+      - ertis_auth
+      - pim-api
+      - wms-api
+      - oms-api

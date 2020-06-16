@@ -1,0 +1,36 @@
+@using ECommerceCase.WebClient.ViewModels.Products
+@model ECommerceCase.WebClient.ViewModels.Products.ProductsGridViewModel
+
+@if (Model.Cards != null)
+{
+	const int COLUMN_COUNT = 4;
+	int itemCount = Model.Cards.Count();
+	List<ProductCardViewModel>[] columnItems = new List<ProductCardViewModel>[COLUMN_COUNT];
+	for (int i = 0; i < COLUMN_COUNT; i++)
+	{
+		columnItems[i] = new List<ProductCardViewModel>();
+	}
+	
+	for (int i = 0; i < itemCount; i++)
+	{
+		int columnNo = i % COLUMN_COUNT;
+		columnItems[columnNo].Add(Model.Cards[i]);
+	}
+	
+	<div class="w3-container w3-text-grey" id="jeans">
+		<p>@itemCount items</p>
+	</div>
+
+	<!-- Product grid -->
+	<div class="w3-row w3-grayscale">
+		@for (int col = 0; col < COLUMN_COUNT; col++)
+		{
+			<div class="w3-col l3 s6">
+				@foreach (var card in columnItems[col])
+				{
+					@await Html.PartialAsync("../Partials/_ProductCard", card)
+				}
+			</div>	
+		}
+	</div>	
+}

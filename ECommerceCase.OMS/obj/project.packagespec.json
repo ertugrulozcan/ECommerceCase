@@ -1,0 +1,79 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/Users/admin/Projects/ECommerceCase/ECommerceCase.OMS/ECommerceCase.OMS.csproj",
+    "projectName": "ECommerceCase.OMS",
+    "projectPath": "/Users/admin/Projects/ECommerceCase/ECommerceCase.OMS/ECommerceCase.OMS.csproj",
+    "outputPath": "/Users/admin/Projects/ECommerceCase/ECommerceCase.OMS/obj/",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp3.1"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {},
+      "https://www.myget.org/F/dgn-lsap/api/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "projectReferences": {}
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp3.1": {
+      "dependencies": {
+        "ECommerceCase.Core": {
+          "target": "Package",
+          "version": "[1.0.0, )"
+        },
+        "ECommerceCase.Infrastructure": {
+          "target": "Package",
+          "version": "[1.0.0, )"
+        },
+        "EasyCaching.Redis": {
+          "target": "Package",
+          "version": "[0.8.9, )"
+        },
+        "Newtonsoft.Json": {
+          "target": "Package",
+          "version": "[12.0.3, )"
+        },
+        "StackExchange.Redis": {
+          "target": "Package",
+          "version": "[2.1.55, )"
+        },
+        "StackExchange.Redis.Extensions.AspNetCore": {
+          "target": "Package",
+          "version": "[6.2.2, )"
+        }
+      },
+      "imports": [
+        "net461",
+        "net462",
+        "net47",
+        "net471",
+        "net472",
+        "net48"
+      ],
+      "assetTargetFallback": true,
+      "warn": true,
+      "frameworkReferences": {
+        "Microsoft.AspNetCore.App": {
+          "privateAssets": "none"
+        },
+        "Microsoft.NETCore.App": {
+          "privateAssets": "all"
+        }
+      },
+      "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.201/RuntimeIdentifierGraph.json"
+    }
+  }
+}

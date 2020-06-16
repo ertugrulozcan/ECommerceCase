@@ -1,0 +1,9 @@
+/Users/admin/Projects/ECommerceCase/ECommerceCase.Core/bin/Release/netcoreapp3.1/ECommerceCase.Core.deps.json
+/Users/admin/Projects/ECommerceCase/ECommerceCase.Core/bin/Release/netcoreapp3.1/ECommerceCase.Core.dll
+/Users/admin/Projects/ECommerceCase/ECommerceCase.Core/bin/Release/netcoreapp3.1/ECommerceCase.Core.pdb
+/Users/admin/Projects/ECommerceCase/ECommerceCase.Core/obj/Release/netcoreapp3.1/ECommerceCase.Core.csprojAssemblyReference.cache
+/Users/admin/Projects/ECommerceCase/ECommerceCase.Core/obj/Release/netcoreapp3.1/ECommerceCase.Core.csproj.CoreCompileInputs.cache
+/Users/admin/Projects/ECommerceCase/ECommerceCase.Core/obj/Release/netcoreapp3.1/ECommerceCase.Core.AssemblyInfoInputs.cache
+/Users/admin/Projects/ECommerceCase/ECommerceCase.Core/obj/Release/netcoreapp3.1/ECommerceCase.Core.AssemblyInfo.cs
+/Users/admin/Projects/ECommerceCase/ECommerceCase.Core/obj/Release/netcoreapp3.1/ECommerceCase.Core.dll
+/Users/admin/Projects/ECommerceCase/ECommerceCase.Core/obj/Release/netcoreapp3.1/ECommerceCase.Core.pdb

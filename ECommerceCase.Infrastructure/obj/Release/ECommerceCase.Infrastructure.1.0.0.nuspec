@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ECommerceCase.Infrastructure</id>
+    <version>1.0.0</version>
+    <title>ECommerceCase.Infrastructure</title>
+    <authors>Ertuğrul Özcan</authors>
+    <owners>Ertuğrul Özcan</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>ECommerceCase.Infrastructure</description>
+    <copyright>ECommerceCase.Infrastructure | Copyright 2020 (c)</copyright>
+    <tags>ECommerceCase.Infrastructure</tags>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="ECommerceCase.Core" version="1.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/Users/admin/Projects/ECommerceCase/ECommerceCase.Infrastructure/bin/Release/netcoreapp3.1/ECommerceCase.Infrastructure.dll" target="lib/netcoreapp3.1/ECommerceCase.Infrastructure.dll" />
+  </files>
+</package>

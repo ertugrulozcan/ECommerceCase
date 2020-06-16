@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+
+        <PackageId>ECommerceCase.Core</PackageId>
+        <PackageVersion>1.0.0</PackageVersion>
+        <Authors>Ertuğrul Özcan</Authors>
+        <Description>ECommerceCase.Core</Description>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <Copyright>ECommerceCase.Core | Copyright 2020 (c)</Copyright>
+        <PackageTags>ECommerceCase.Core</PackageTags>
+        <Title>ECommerceCase.Core</Title>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <FileVersion>1.0.0</FileVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="StackExchange.Redis.Extensions.Core" Version="6.2.2" />
+    </ItemGroup>
+
+</Project>

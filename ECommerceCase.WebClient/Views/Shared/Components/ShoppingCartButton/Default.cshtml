@@ -1,0 +1,88 @@
+@model ECommerceCase.WebClient.ViewModels.ShoppingCart.ShoppingCartButtonViewModel
+
+<div id="shoppingBasketPopoverContent" style="display: none;">
+	@if (Model.ShoppingCartItems != null && Model.ShoppingCartItems.Any())
+	{
+		<ul class="shoppingBasketPopover w3-ul">
+			@foreach (var item in Model.ShoppingCartItems)
+			{
+				<li class="w3-bar">
+					<a asp-controller="Shopping" asp-action="RemoveFromShoppingCart" asp-route-productId="@item.Product.Id">
+						<span class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+					</a>
+					
+					<img src="@item.Product.Images.FirstOrDefault()" class="shopping-cart-popover-thumbnail w3-bar-item w3-circle w3-hide-small" alt="@item.Product">
+					<div class="w3-bar-item">
+						<span class="w3-large">@item.Product.Name</span><br>
+						<span>@item.Product.Price</span> x <span>@item.Quantity</span>
+					</div>
+				</li>
+			}
+		</ul>
+		
+		<hr/>
+		
+		@if (Model.ShoppingCartItems != null && Model.ShoppingCartItems.Any())
+		{
+			<div class="p-l-20 p-t-10 p-b-15">
+				<p>
+					<span>Subtotal : </span>
+					<span>@Model.ShoppingCartItems.Sum(x => x.TotalPrice).ToString("F2")</span>
+					<span>@Model.ShoppingCartItems.FirstOrDefault().Product.Price.Currency</span>
+				</p>
+				<p>
+					<span>Shipping : </span><span>Free</span>
+				</p>
+				<p>
+					<strong>Total : </strong>
+					<strong>@Model.ShoppingCartItems.Sum(x => x.TotalPrice).ToString("F2")</strong>
+					<span>@Model.ShoppingCartItems.FirstOrDefault().Product.Price.Currency</span>
+				</p>
+			</div>
+		
+			<div>
+				<p><a id="checkoutButton" class="btn btn-success full-width">Checkout</a></p>
+				<p><a class="btn btn-secondary full-width" asp-controller="Shopping" asp-action="EmptyShoppingCart">Empty cart</a></p>
+			</div>	
+		}
+	}
+	else
+	{
+		<div class="p-t-10">
+			<br/>
+			<span>Cart is empty</span>
+			<p>Looks like you have no items your shopping cart.</p>
+		</div>
+	}
+</div>
+        	
+<button id="shoppingBasketButton"
+		class="icon-btn w3-margin-right notification"
+		onclick="$(this).popover('show');"
+		data-container="body"
+		data-toggle="popover"
+		data-placement="bottom"
+		data-html="true"
+		title="Shopping Cart">
+	<i class="fa fa-shopping-cart"></i>
+	@if (Model.ShoppingCartItems != null && Model.ShoppingCartItems.Any())
+	{
+		<span class="badge">@Model.ShoppingCartItems.Sum(x => x.Quantity)</span>	
+	}
+</button>
+
+<script>
+	$(window).on('load', function() {
+		$('#shoppingBasketButton').attr('data-content', document.getElementById('shoppingBasketPopoverContent').innerHTML);
+		
+		$('html').on('click', function (e) {
+            $('[data-toggle="popover"]').each(function () {
+                //the 'is' for buttons that trigger popups
+                //the 'has' for icons within a button that triggers a popup
+                if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+                    $(this).popover('hide');
+                }
+            });
+        });
+	});
+</script>
