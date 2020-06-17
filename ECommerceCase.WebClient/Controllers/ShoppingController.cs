@@ -36,7 +36,7 @@ namespace ECommerceCase.WebClient.Controllers
 		{
 			if (!this.IsLoggedIn)
 			{
-				return this.Unauthorized();
+				return this.RedirectToAction("Login", "Auth");
 			}
 
 			IResponseResult response = this.shoppingService.AddToShoppingCart(this.UserId, productId);
