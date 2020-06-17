@@ -18,7 +18,11 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "/Users/admin/Projects/ECommerceCase/ECommerceCase.PIM/ECommerceCase.PIM.csproj": {
+            "projectPath": "/Users/admin/Projects/ECommerceCase/ECommerceCase.PIM/ECommerceCase.PIM.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
@@ -54,6 +58,9 @@
       "assetTargetFallback": true,
       "warn": true,
       "frameworkReferences": {
+        "Microsoft.AspNetCore.App": {
+          "privateAssets": "none"
+        },
         "Microsoft.NETCore.App": {
           "privateAssets": "all"
         }

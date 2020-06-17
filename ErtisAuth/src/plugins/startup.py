@@ -70,6 +70,44 @@ async def migrate_db(db, membership_id, membership_name, admin_user_id):
         inserted_doc = await db.memberships.insert_one(membership_doc)
         membership_doc['_id'] = inserted_doc.inserted_id
 
+        user_type = await db.user_types.find_one({
+            'name': "default_user"
+        })
+
+        if not user_type:
+            user_type_doc = {
+                "name": "default_user",
+                "slug": "default_user",
+                "description": "Default User",
+                "membership_id": str(membership_doc['_id']),
+                "schema": {
+                    "properties": {
+                        "profile": {
+                            "type": "object",
+                            "properties": {
+                                "modified_at": {
+                                    "type": "string",
+                                    "format": "date"
+                                },
+                                "modified_by": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": []
+                        }
+                    },
+                    "required": [],
+                    "additionalProperties": False
+                },
+                "sys": {
+                    "created_at": datetime.datetime.utcnow(),
+                    "created_by": "system"
+                }
+            }
+
+            inserted_user_type_doc = await db.user_types.insert_one(user_type_doc)
+            user_type_doc['_id'] = inserted_user_type_doc.inserted_id
+
         admin_role = await db.roles.find_one({
             'name': "admin"
         })
@@ -93,6 +131,34 @@ async def migrate_db(db, membership_id, membership_name, admin_user_id):
 
             inserted_doc = await db.roles.insert_one(role_doc)
             role_doc['_id'] = inserted_doc.inserted_id
+
+        admin_user = await db.users.find_one({
+            '_id': maybe_object_id(admin_user_id)
+        })
+
+        end_user_role = await db.roles.find_one({
+            'name': "enduser"
+        })
+
+        if not end_user_role:
+            end_user_role_doc = {
+                "name": "enduser",
+                "permissions": [
+                    "users.*",
+                    "applications.*",
+                    "roles.*",
+                    "user_types.*"
+                ],
+                "slug": "enduser",
+                "membership_id": str(membership_doc['_id']),
+                "sys": {
+                    "created_at": datetime.datetime.utcnow(),
+                    "created_by": "system"
+                }
+            }
+
+            inserted_doc = await db.roles.insert_one(end_user_role_doc)
+            end_user_role_doc['_id'] = inserted_doc.inserted_id
 
         admin_user = await db.users.find_one({
             '_id': maybe_object_id(admin_user_id)

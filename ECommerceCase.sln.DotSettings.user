@@ -1,0 +1,8 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=09823e7f_002D86b9_002D46dd_002D9ed1_002D275021a2a42e/@EntryIndexedValue">&lt;SessionState ContinuousTestingIsOn="False" ContinuousTestingMode="0" FrameworkVersion="{x:Null}" IsLocked="False" Name="StockServiceTests" PlatformMonoPreference="{x:Null}" PlatformType="{x:Null}" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::311EEBCC-FADD-4F17-A7BF-CAC1DB60479B::.NETCoreApp,Version=v3.1::ECommerceCase.WMS.Tests.StockServiceTests&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::1F79427C-78FA-4BBD-A21B-3C3FD96A1FBF::.NETCoreApp,Version=v3.1::ECommerceCase.PIM.Tests.ProductServiceTests&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::1F79427C-78FA-4BBD-A21B-3C3FD96A1FBF::.NETCoreApp,Version=v3.1::ECommerceCase.PIM.Tests.CategoryServiceTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

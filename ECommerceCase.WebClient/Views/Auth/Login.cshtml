@@ -8,14 +8,16 @@
 			</div>
 			
 			<div class="col-md-12 col-sm-12">
-				@if (Model.IsHealthy)
-				{
-					<span class="badge badge-pill badge-success"></span>
-				}
-				else
-				{
-					<span class="badge badge-pill badge-success"></span>
-				}
+				<div style="float: right;">
+					@if (Model.IsHealthy)
+                    {
+                    	<span class="badge badge-pill badge-success">&nbsp;</span>
+                    }
+                    else
+                    {
+                    	<span class="badge badge-pill badge-success">&nbsp;</span>
+                    }
+				</div>
 			</div>
 			
 			<div class="col-md-6 col-sm-12">

@@ -3,6 +3,10 @@
 <section style="background: #fafafa; border: 1px solid #999999; padding: 30px 20px;">
 	<div class="container">
 		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<div asp-validation-summary="ModelOnly" class="alert alert-danger" style="font-weight: bolder;" role="alert"></div>
+			</div>
+			
 			<div class="col-md-10 col-sm-12">
 				<div class="sign-up">
 					<form id="signup" class="validate-form" asp-controller="Auth" asp-action="Register" method="post">

@@ -20,9 +20,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fb49619-e791-48b7-a49b-ec6af336a9b2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/configs/develop.py" beforeDir="false" afterPath="$PROJECT_DIR$/configs/develop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugins/startup.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugins/startup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/CategoryServiceTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.OMS.Tests/bin/Debug/netcoreapp3.1/nunit_random_seed.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.OMS.Tests/bin/Debug/netcoreapp3.1/nunit_random_seed.tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.OMS.Tests/obj/Debug/netcoreapp3.1/ECommerceCase.OMS.Tests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.OMS.Tests/obj/Debug/netcoreapp3.1/ECommerceCase.OMS.Tests.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.OMS/obj/Debug/netcoreapp3.1/ECommerceCase.OMS.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.OMS/obj/Debug/netcoreapp3.1/ECommerceCase.OMS.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/ECommerceCase.PIM.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/ECommerceCase.PIM.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/ProductServiceTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/bin/Debug/netcoreapp3.1/ECommerceCase.PIM.Tests.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/bin/Debug/netcoreapp3.1/ECommerceCase.PIM.Tests.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/bin/Debug/netcoreapp3.1/ECommerceCase.PIM.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/bin/Debug/netcoreapp3.1/ECommerceCase.PIM.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/bin/Debug/netcoreapp3.1/ECommerceCase.PIM.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/bin/Debug/netcoreapp3.1/ECommerceCase.PIM.Tests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/bin/Debug/netcoreapp3.1/ECommerceCase.PIM.Tests.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/bin/Debug/netcoreapp3.1/ECommerceCase.PIM.Tests.runtimeconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/bin/Debug/netcoreapp3.1/nunit_random_seed.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/bin/Debug/netcoreapp3.1/nunit_random_seed.tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/obj/Debug/netcoreapp3.1/ECommerceCase.PIM.Tests.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/obj/Debug/netcoreapp3.1/ECommerceCase.PIM.Tests.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/obj/Debug/netcoreapp3.1/ECommerceCase.PIM.Tests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/obj/Debug/netcoreapp3.1/ECommerceCase.PIM.Tests.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/obj/Debug/netcoreapp3.1/ECommerceCase.PIM.Tests.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/obj/Debug/netcoreapp3.1/ECommerceCase.PIM.Tests.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/obj/Debug/netcoreapp3.1/ECommerceCase.PIM.Tests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/obj/Debug/netcoreapp3.1/ECommerceCase.PIM.Tests.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/obj/Debug/netcoreapp3.1/ECommerceCase.PIM.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/obj/Debug/netcoreapp3.1/ECommerceCase.PIM.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/obj/Debug/netcoreapp3.1/ECommerceCase.PIM.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/obj/Debug/netcoreapp3.1/ECommerceCase.PIM.Tests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/obj/ECommerceCase.PIM.Tests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/obj/ECommerceCase.PIM.Tests.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/obj/ECommerceCase.PIM.Tests.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/obj/ECommerceCase.PIM.Tests.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.PIM.Tests/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.PIM/obj/Debug/netcoreapp3.1/ECommerceCase.PIM.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.PIM/obj/Debug/netcoreapp3.1/ECommerceCase.PIM.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.WMS/obj/Debug/netcoreapp3.1/ECommerceCase.WMS.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.WMS/obj/Debug/netcoreapp3.1/ECommerceCase.WMS.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.WebClient/Views/Auth/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.WebClient/Views/Auth/Login.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.WebClient/Views/Auth/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.WebClient/Views/Auth/Register.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.WebClient/bin/Debug/netcoreapp3.1/ECommerceCase.WebClient.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.WebClient/bin/Debug/netcoreapp3.1/ECommerceCase.WebClient.Views.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.WebClient/bin/Debug/netcoreapp3.1/ECommerceCase.WebClient.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.WebClient/bin/Debug/netcoreapp3.1/ECommerceCase.WebClient.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.WebClient/bin/Debug/netcoreapp3.1/ECommerceCase.WebClient.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.WebClient/bin/Debug/netcoreapp3.1/ECommerceCase.WebClient.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.WebClient/bin/Debug/netcoreapp3.1/ECommerceCase.WebClient.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.WebClient/bin/Debug/netcoreapp3.1/ECommerceCase.WebClient.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.WebClient/obj/Debug/netcoreapp3.1/ECommerceCase.WebClient.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.WebClient/obj/Debug/netcoreapp3.1/ECommerceCase.WebClient.Views.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.WebClient/obj/Debug/netcoreapp3.1/ECommerceCase.WebClient.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.WebClient/obj/Debug/netcoreapp3.1/ECommerceCase.WebClient.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.WebClient/obj/Debug/netcoreapp3.1/ECommerceCase.WebClient.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.WebClient/obj/Debug/netcoreapp3.1/ECommerceCase.WebClient.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.WebClient/obj/Debug/netcoreapp3.1/ECommerceCase.WebClient.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.WebClient/obj/Debug/netcoreapp3.1/ECommerceCase.WebClient.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.WebClient/obj/Debug/netcoreapp3.1/ECommerceCase.WebClient.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.WebClient/obj/Debug/netcoreapp3.1/ECommerceCase.WebClient.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.WebClient/obj/Debug/netcoreapp3.1/Razor/Views/Auth/Login.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.WebClient/obj/Debug/netcoreapp3.1/Razor/Views/Auth/Login.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ECommerceCase.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../ECommerceCase.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +73,13 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/api/provider_sign_in.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1at2pzIpnXtu3Rrg7SoVMYniHsa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
